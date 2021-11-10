@@ -10,9 +10,18 @@ module.exports = {
     headingText: {
         selector:`//h1[contains(text(),'Create')]`,
           locateStrategy: 'xpath'},
-    Username: {
-            selector:`/html/body/div/div[2]/div/div/div[2]/form/div[1]/div[2]/span/input`,
-              locateStrategy: 'xpath'}
+     locusernameInput:{
+            selector:"/html/body/div/div[2]/div/div/div[2]/form/div[1]/div[2]/span/input",
+            locateStrategy:"xpath"  
+        },
+        locPasswordInput:{
+          selector:"/html/body/div/div[2]/div/div/div[2]/form/div[2]/div[2]/span/input",
+          locateStrategy:"xpath"  
+      },
+      locSubmitBtn:{
+        selector:"/html/body/div/div[2]/div/div/div[2]/form/div[3]/button",
+        locateStrategy:"xpath"  
+    },
           
   }
   
