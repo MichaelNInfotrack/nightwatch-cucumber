@@ -1,0 +1,361 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "PlanIT Search Fearture",
+    "line": 2,
+    "id": "planit-search-fearture",
+    "tags": [],
+    "uri": "features\\Dashboard.feature",
+    "elements": [
+      {
+        "id": "planit-search-fearture;ensure-that-the-user-is-able-to-search-for-an-exisiting-products",
+        "keyword": "Scenario",
+        "line": 6,
+        "name": "Ensure that the user is able to search for an exisiting products",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 8,
+            "name": "that the user is logged in and the dashboard page is displayed",
+            "match": {
+              "location": "step-definitions\\dashboardPageDefinition.js:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1069000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 9,
+            "name": "I enter and Existing Project into the search bar",
+            "match": {
+              "location": "step-definitions\\dashboardPageDefinition.js:19"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5158000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 10,
+            "name": "the Project should get displayed",
+            "match": {
+              "location": "step-definitions\\dashboardPageDefinition.js:27"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1054000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "planit-search-fearture;ensure-that-the-user-is-getting-displayed-an-error-message-when-then-user-inputs-a-project-that-doesnt-exisit",
+        "keyword": "Scenario",
+        "line": 12,
+        "name": "Ensure that the user is getting displayed an error message when then user inputs a project that doesnt exisit",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 15,
+            "name": "that the user is logged in and the dashboard page is displayed",
+            "match": {
+              "location": "step-definitions\\dashboardPageDefinition.js:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1047000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 17,
+            "name": "I enters a Project that does not exisit into the search bar",
+            "result": {
+              "status": "undefined"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 18,
+            "name": "user should get displayed an error message",
+            "result": {
+              "status": "undefined"
+            }
+          }
+        ]
+      },
+      {
+        "id": "planit-search-fearture;ensure-that-when-i-type-via-lot-number-that-only-that-number-lot-is-getting-displayed",
+        "keyword": "Scenario",
+        "line": 21,
+        "name": "Ensure that when I type via lot number that only that number lot is getting displayed",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 23,
+            "name": "that the user is logged in and the dashboard page is displayed",
+            "match": {
+              "location": "step-definitions\\dashboardPageDefinition.js:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1062000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 24,
+            "name": "I enter a lot number in the search bar",
+            "result": {
+              "status": "undefined"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 25,
+            "name": "click search via lot number",
+            "result": {
+              "status": "undefined"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 26,
+            "name": "the lots that comply with the search should get displayed",
+            "result": {
+              "status": "undefined"
+            }
+          }
+        ]
+      },
+      {
+        "id": "planit-search-fearture;ensure-that-when-i-type-via-lot-number-that-only-that-number-lot-is-getting-displayed",
+        "keyword": "Scenario",
+        "line": 29,
+        "name": "Ensure that when I type via lot number that only that number lot is getting displayed",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 31,
+            "name": "that the user is logged in and the dashboard page is displayed",
+            "match": {
+              "location": "step-definitions\\dashboardPageDefinition.js:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1046000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 32,
+            "name": "I enter and Existing Project into the search bar",
+            "match": {
+              "location": "step-definitions\\dashboardPageDefinition.js:19"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5144000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 33,
+            "name": "the Project should get displayed",
+            "match": {
+              "location": "step-definitions\\dashboardPageDefinition.js:27"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1058000000
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "keyword": "Feature",
+    "name": "PlanIT Login Feature",
+    "line": 2,
+    "id": "planit-login-feature",
+    "tags": [
+      {
+        "name": "@planIT",
+        "line": 1
+      }
+    ],
+    "uri": "features\\featureOne.feature",
+    "elements": [
+      {
+        "id": "planit-login-feature;ensure-that-the-user-is-able-to-login-with--valid-credentials",
+        "keyword": "Scenario",
+        "line": 4,
+        "name": "Ensure that the user is able to login with  valid credentials",
+        "tags": [
+          {
+            "name": "@planIT",
+            "line": 1
+          },
+          {
+            "name": "@login",
+            "line": 3
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "I open Open the PlanIT Login Screen",
+            "match": {
+              "location": "step-definitions\\simpleSite.js:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5808000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 7,
+            "name": "I enter my Username",
+            "result": {
+              "status": "ambiguous"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 8,
+            "name": "I enter my Password",
+            "match": {
+              "location": "step-definitions\\simpleSite.js:21"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 9,
+            "name": "Click Subimit",
+            "match": {
+              "location": "step-definitions\\simpleSite.js:27"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 10,
+            "name": "the user is should be displayed the PlanIT Dashboard Screen",
+            "result": {
+              "status": "ambiguous"
+            }
+          }
+        ]
+      },
+      {
+        "id": "planit-login-feature;ensure-that-the-user-is-able-to-login-with--valid-credentials",
+        "keyword": "Scenario",
+        "line": 13,
+        "name": "Ensure that the user is able to login with  valid credentials",
+        "tags": [
+          {
+            "name": "@planIT",
+            "line": 1
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 14,
+            "name": "I open Open the PlanIT Login Screen",
+            "match": {
+              "location": "step-definitions\\simpleSite.js:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 258000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 15,
+            "name": "I enter an Incorrect Username",
+            "match": {
+              "location": "step-definitions\\simpleSite.js:41"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 258000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 16,
+            "name": "I enter my Incorrect Password",
+            "result": {
+              "status": "undefined"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 17,
+            "name": "Click Subimit",
+            "match": {
+              "location": "step-definitions\\simpleSite.js:27"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 18,
+            "name": "the user is should be displayed an error message",
+            "result": {
+              "status": "undefined"
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

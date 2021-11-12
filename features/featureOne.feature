@@ -1,6 +1,6 @@
-
+@planIT
 Feature: PlanIT Login Feature
-
+@login
 Scenario: Ensure that the user is able to login with  valid credentials
 
   Given I open Open the PlanIT Login Screen

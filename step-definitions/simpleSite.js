@@ -34,6 +34,7 @@ Then("the user is should be displayed the PlanIT Dashboard Screen", ()=>{
     console.log("Validation step")
     return DashboardPage 
     .waitForElementPresent("@locPlanITSearch", 1000, false, "Dashboard Search bar is visible")
+    .close()
 });
 
 
