@@ -3,7 +3,7 @@ Feature: PlanIT Search Fearture
 
 
 
-Scenario: Ensure that the user is able to search for an exisiting products
+Scenario: Ensure that the user is able to search for an exisiting Projects
 
   Given that the user is logged in and the dashboard page is displayed 
   When I enter and Existing Project into the search bar 
@@ -13,7 +13,6 @@ Scenario: Ensure that the user is getting displayed an error message when then u
 
 
   Given that the user is logged in and the dashboard page is displayed 
-
   When I enters a Project that does not exisit into the search bar 
   Then user should get displayed an error message 
 
@@ -26,8 +25,22 @@ Scenario: Ensure that when I type via lot number that only that number lot is ge
   Then the lots that comply with the search should get displayed
 
 
-Scenario: Ensure that when I type via lot number that only that number lot is getting displayed
+Scenario: Ensure that when I type via matter reference that only that Matter Reference lot is getting displayed
 
     Given that the user is logged in and the dashboard page is displayed 
-  When I enter and Existing Project into the search bar 
-  Then the Project should get displayed 
+    When I enter and Existing Project into the search bar 
+    Then the Project should get displayed 
+
+
+Scenario: Ensure that when I type via Address that only the lot with that Address is getting displayed
+
+    Given that the user is logged in and the dashboard page is displayed 
+    When I enter and Existing Project into the search bar 
+    Then the Project should get displayed 
+
+    
+Scenario: Ensure that when I type via PartyMember that only the lot with that PartyMember is getting displayed
+
+    Given that the user is logged in and the dashboard page is displayed 
+    When I enter and Existing Project into the search bar 
+    Then the Project should get displayed 

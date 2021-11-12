@@ -80,12 +80,12 @@ Given('the dashboard page is displayed', () =>{
 
 
 
-When("I enter my Username", ()=>{
+// When("I enter my Username", ()=>{
 
-    return LoginPage
-    .setValue('@locusernameInput',"PlanIT-Tester-1")
+//     return LoginPage
+//     .setValue('@locusernameInput',"PlanIT-Tester-1")
 
-});
+// });
 
 Then("the user is should be displayed the PlanIT Dashboard Screen", ()=>{
     console.log("Validation step")

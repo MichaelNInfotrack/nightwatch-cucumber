@@ -137,6 +137,10 @@ module.exports = {
         locProjectID: {
             selector: "(//div[contains(.,'TestingPLanITNSW')])[6]",
             locateStrategy: 'xpath'
-        },       
+        },    
+        locProjectDashboardTitle:{
+            selector:"/html/body/div/div[2]/div[1]/div/div/div[1]/div/div[1]/h3",
+            locateStrategy:"xpath"
+        }   
     }
   }

@@ -1,4 +1,4 @@
-const { setDefaultTimeout, AfterAll, BeforeAll } = require('cucumber');
+const { setDefaultTimeout, After, AfterAll, BeforeAll } = require('cucumber');
 const { createSession, closeSession, startWebDriver, stopWebDriver } = require('nightwatch-api');
 const reporter = require('cucumber-html-reporter');
 const attachedScreenshots = getScreenshots();
