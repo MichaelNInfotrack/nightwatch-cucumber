@@ -141,6 +141,38 @@ module.exports = {
         locProjectDashboardTitle:{
             selector:"/html/body/div/div[2]/div[1]/div/div/div[1]/div/div[1]/h3",
             locateStrategy:"xpath"
-        }   
+        },  
+        locSearchResult:{
+            selector:"/html/body/div/div[2]/div[1]/div/div/div[1]/div/div[3]/div[2]",
+            locateStrategy:"xpath"
+        },
+        locNoSearchResult:{
+            selector:"/html/body/div/div[2]/div[1]/div/div/div[1]/div/div[3]/div[2]/h4",
+            locateStrategy:"xpath"
+        },
+        locSearchLotNumber:{
+            selector:"/html/body/div/div[2]/div[1]/div/div/div[1]/div/div[1]/div[2]/div/ul/li[5]",
+            locateStrategy:"xpath"
+        },
+        locSearchResultLotNumber:{
+            selector:"/html/body/div/div[2]/div[1]/div/div/div[1]/div/div[1]/div[2]/div/ul/li[5]",
+            locateStrategy:"xpath"
+        },
+        locSearchResultLotNumber:{
+            selector:"/html/body/div/div[2]/div[1]/div/div/div[1]/div/div[1]/div[2]/div/ul/li[5]",
+            locateStrategy:"xpath"
+        },
+        locSearchMatterRef:{
+            selector:"/html/body/div/div[2]/div[1]/div/div/div[1]/div/div[1]/div[2]/div/ul/li[4]",
+            locateStrategy:"xpath"
+        },
+
+        locSearchMatterRerResult:{
+            selector:"/html/body/div/div[2]/div[1]/div/div/div[1]/div/div[3]/div[2]/div/div[2]",
+            locateStrategy:"xpath"
+        },
+
+       
+
     }
   }

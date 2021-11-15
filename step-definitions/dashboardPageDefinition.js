@@ -1,6 +1,6 @@
 const {client} = require('nightwatch-api');
 const {Given, When, Then,And} = require('cucumber');
-var LoginPage = client.page.LoginPage();
+var LoginPage = client.page.demoObjects();
 var DashboardPage = client.page.dashboardPage();
 
 
@@ -10,8 +10,14 @@ var DashboardPage = client.page.dashboardPage();
 
 Given('that the user is logged in and the dashboard page is displayed', () =>{
     console.log("Foundation Step")
-    return DashboardPage
+    return LoginPage
+    .navigate()
+    .maximizeWindow()
+    .setValue('@locusernameInput',"planit.integration.tests")
+    .setValue('@locPasswordInput',"planit.integration.tests")
+    .click('@locSubmitBtn')
     .waitForElementPresent("@locPlanITSearch", 1000, false, "Dashboard Search bar is visible")
+
 
 
 });
@@ -20,6 +26,8 @@ When("I enter and Existing Project into the search bar", ()=>{
 
     return DashboardPage
         .setValue("@locPlanITSearch","Sanity")
+
+
         
 
 });
@@ -27,7 +35,7 @@ When("I enter and Existing Project into the search bar", ()=>{
 Then("the Project should get displayed", ()=>{
     console.log("Validation step")
     return DashboardPage
-    .waitForElementPresent("@locPlanITSearch", 1000, false, "Dashboard Search bar is visible")
+    .waitForElementPresent("@locSearchResult", 1000, false, "Search Result Returned")
 
 })
 
@@ -48,21 +56,19 @@ Then(/^I enters a Project that does not exisit into the search bar$/, ()=> {
     // Write code here that turns the phrase above into concrete actions
     console.log("actions")
     return DashboardPage
+    .setValue("@locPlanITSearch","testingErrorMessagesForDashboardPage")
+
   });
 
 
-Then("the user is should be displayed the PlanIT Dashboard Screen", ()=>{
-    console.log("Validation step")
-    return DashboardPage
-    .waitForElementPresent("@locPlanITSearch", 1000, false, "Dashboard Search bar is visible")
 
-})
 
 Then(/^user should get displayed an error message$/,()=> {
     // Write code here that turns the phrase above into concrete actions
     console.log("Validation step")
     return DashboardPage
-    .waitForElementPresent("@locPlanITSearch", 1000, false, "Dashboard Search bar is visible")
+    .waitForElementPresent("@locNoSearchResult", 1000, false, "No Results Error message is visible")
+
 
   });
           
@@ -79,13 +85,32 @@ Given('the dashboard page is displayed', () =>{
 
 
 
+When('I enter a lot number in the search bar', ()=> {
+    // Write code here that turns the phrase above into concrete actions
+    console.log("Action Step")
+    return DashboardPage
+    .setValue("@locPlanITSearch","12")
+  
 
-// When("I enter my Username", ()=>{
+;
+  });
 
-//     return LoginPage
-//     .setValue('@locusernameInput',"PlanIT-Tester-1")
 
-// });
+  When('click search via lot number', ()=> {
+    // Write code here that turns the phrase above into concrete actions
+    console.log("Action Step")
+    return DashboardPage
+    .click('@locSearchLotNumber')
+  });
+
+  When('the lots that comply with the search should get displayed', ()=> {
+    // Write code here that turns the phrase above into concrete actions
+    console.log("Action Step")
+    return DashboardPage
+    .waitForElementPresent("@locSearchResultLotNumber", 1000, false, "Dashboard Search bar is visible")
+
+  });
+        
 
 Then("the user is should be displayed the PlanIT Dashboard Screen", ()=>{
     console.log("Validation step")
@@ -108,12 +133,30 @@ Given('the dashboard page is displayed', () =>{
     .maximizeWindow()
 
 });
+When('I enter and Existing Project only via Matter Reference into the search bar', ()=> {
+    // Write code here that turns the phrase above into concrete actions
+    console.log("Action Step")
+    return DashboardPage
+    .setValue("@locPlanITSearch","TestMatter")
+
+  });
+  When('I click Search via matter Reference', ()=> {
+    // Write code here that turns the phrase above into concrete actions
+    console.log("Action Step")
+    return DashboardPage
+    .click("@locSearchMatterRef")
 
 
+  });
 
-Then("the user is should be displayed the PlanIT Dashboard Screen", ()=>{
+
+Then('the user is should be displayed the PlanIT Dashboard Screen', ()=>{
     console.log("Validation step")
     return DashboardPage
-    .waitForElementPresent("@locPlanITSearch", 1000, false, "Dashboard Search bar is visible")
+    .waitForElementPresent("@locSearchMatterRerResult", 1000, false, "Dashboard Search bar is visible")
 
 })
+
+
+
+

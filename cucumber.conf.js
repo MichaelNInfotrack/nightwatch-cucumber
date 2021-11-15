@@ -1,9 +1,10 @@
+const fs = require('fs');
+const path = require('path');
 const { setDefaultTimeout, After, AfterAll, BeforeAll } = require('cucumber');
 const { createSession, closeSession, startWebDriver, stopWebDriver } = require('nightwatch-api');
 const reporter = require('cucumber-html-reporter');
+
 const attachedScreenshots = getScreenshots();
-const fs = require('fs');
-const path = require('path');
 
 function getScreenshots() {
   try {
@@ -39,7 +40,6 @@ AfterAll(async () => {
       }
     });
   }, 0);
-
 });
 
 After(function() {

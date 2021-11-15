@@ -1,4 +1,4 @@
-@planIT
+@PlanIT
 Feature: PlanIT Login Feature
 @login
   Scenario: Ensure that the user is able to login with  invalid credentials
@@ -8,7 +8,7 @@ Feature: PlanIT Login Feature
   When Click Subimit
   Then the user is should be displayed an error message 
 
-
+@login
 Scenario: Ensure that the user is able to login with  valid credentials
 
   Given I open Open the PlanIT Login Screen
