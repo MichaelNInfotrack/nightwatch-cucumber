@@ -39,8 +39,8 @@ Scenario: Ensure that when I type via matter reference that only that Matter Ref
 Scenario: Ensure that when I type via Address that only the lot with that Address is getting displayed
 
     Given that the user is logged in and the dashboard page is displayed 
-    When I enter and Existing Project into the search bar 
-    Then the Project should get displayed 
+    When I enter and Existing Address into the search bar 
+    Then the Project With that Address should get displayed 
 
     
 @dashboard

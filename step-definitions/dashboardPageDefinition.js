@@ -25,11 +25,7 @@ Given('that the user is logged in and the dashboard page is displayed', () =>{
 When("I enter and Existing Project into the search bar", ()=>{
 
     return DashboardPage
-        .setValue("@locPlanITSearch","Sanity")
-
-
-        
-
+        .setValue("@locPlanITSearch","Sanity")        
 });
 
 Then("the Project should get displayed", ()=>{
@@ -124,8 +120,6 @@ Then("the user is should be displayed the PlanIT Dashboard Screen", ()=>{
 
 
 // Scenario 4
-
-
 Given('the dashboard page is displayed', () =>{
     console.log("Foundation Step")
     return LoginPage
@@ -156,7 +150,21 @@ Then('the user is should be displayed the PlanIT Dashboard Screen', ()=>{
     .waitForElementPresent("@locSearchMatterRerResult", 1000, false, "Dashboard Search bar is visible")
 
 })
+// Scenario 5 
+// address search 
+
+When('I enter and Existing Address into the search bar', ()=> {
+    // Write code here that turns the phrase above into concrete actions
+    console.log("Action Step")
+    return DashboardPage
+    .setValue("@locPlanITSearch","12 Test Address")
+
+  });
 
 
+Then(/^the Project With that Address should get displayed$/, ()=> {
+    console.log("Validation step")
+    return DashboardPage
+    .waitForElementPresent("@locSearchMatterRerResult", 1000, false, "Dashboard Search bar is visible")
 
-
+  });
