@@ -15,7 +15,7 @@
       {
         "id": "planit-search-fearture;ensure-that-the-user-is-able-to-search-for-an-exisiting-projects",
         "keyword": "Scenario",
-        "line": 6,
+        "line": 8,
         "name": "Ensure that the user is able to search for an exisiting Projects",
         "tags": [
           {
@@ -25,6 +25,14 @@
           {
             "name": "@dashboard",
             "line": 5
+          },
+          {
+            "name": "@Sanity",
+            "line": 6
+          },
+          {
+            "name": "@Regression",
+            "line": 7
           }
         ],
         "type": "scenario",
@@ -32,411 +40,40 @@
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 8,
-            "name": "that the user is logged in and the dashboard page is displayed",
-            "match": {
-              "location": "step-definitions\\dashboardPageDefinition.js:11"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 6992000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 9,
-            "name": "I enter and Existing Project into the search bar",
-            "match": {
-              "location": "step-definitions\\dashboardPageDefinition.js:25"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 1273000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
             "line": 10,
-            "name": "the Project should get displayed",
-            "match": {
-              "location": "step-definitions\\dashboardPageDefinition.js:31"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 37000000
-            }
-          },
-          {
-            "keyword": "After",
-            "hidden": true,
-            "match": {
-              "location": "PlanIT\\nightwatch-cucumber\\node_modules\\cucumber\\lib\\support_code_library_builder\\index.js:62"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 1000000
-            }
-          }
-        ]
-      },
-      {
-        "id": "planit-search-fearture;ensure-that-the-user-is-getting-displayed-an-error-message-when-then-user-inputs-a-project-that-doesnt-exisit",
-        "keyword": "Scenario",
-        "line": 13,
-        "name": "Ensure that the user is getting displayed an error message when then user inputs a project that doesnt exisit",
-        "tags": [
-          {
-            "name": "@PlanIT",
-            "line": 1
-          },
-          {
-            "name": "@dashboard",
-            "line": 12
-          }
-        ],
-        "type": "scenario",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 14,
             "name": "that the user is logged in and the dashboard page is displayed",
             "match": {
               "location": "step-definitions\\dashboardPageDefinition.js:11"
             },
             "result": {
               "status": "passed",
-              "duration": 15738000000
+              "duration": 7050000000
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 15,
-            "name": "I enters a Project that does not exisit into the search bar",
-            "match": {
-              "location": "step-definitions\\dashboardPageDefinition.js:51"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 211000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 16,
-            "name": "user should get displayed an error message",
-            "match": {
-              "location": "step-definitions\\dashboardPageDefinition.js:62"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 1056000000
-            }
-          },
-          {
-            "keyword": "After",
-            "hidden": true,
-            "match": {
-              "location": "PlanIT\\nightwatch-cucumber\\node_modules\\cucumber\\lib\\support_code_library_builder\\index.js:62"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 0
-            }
-          }
-        ]
-      },
-      {
-        "id": "planit-search-fearture;ensure-that-when-i-type-via-lot-number-that-only-that-number-lot-is-getting-displayed",
-        "keyword": "Scenario",
-        "line": 20,
-        "name": "Ensure that when I type via lot number that only that number lot is getting displayed",
-        "tags": [
-          {
-            "name": "@PlanIT",
-            "line": 1
-          },
-          {
-            "name": "@dashboard",
-            "line": 19
-          }
-        ],
-        "type": "scenario",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 22,
-            "name": "that the user is logged in and the dashboard page is displayed",
-            "match": {
-              "location": "step-definitions\\dashboardPageDefinition.js:11"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 15736000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 23,
-            "name": "I enter a lot number in the search bar",
-            "match": {
-              "location": "step-definitions\\dashboardPageDefinition.js:84"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 116000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 24,
-            "name": "click search via lot number",
-            "match": {
-              "location": "step-definitions\\dashboardPageDefinition.js:95"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 94000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 25,
-            "name": "the lots that comply with the search should get displayed",
-            "match": {
-              "location": "step-definitions\\dashboardPageDefinition.js:102"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 1063000000
-            }
-          },
-          {
-            "keyword": "After",
-            "hidden": true,
-            "match": {
-              "location": "PlanIT\\nightwatch-cucumber\\node_modules\\cucumber\\lib\\support_code_library_builder\\index.js:62"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 0
-            }
-          }
-        ]
-      },
-      {
-        "id": "planit-search-fearture;ensure-that-when-i-type-via-matter-reference-that-only-that-matter-reference-lot-is-getting-displayed",
-        "keyword": "Scenario",
-        "line": 29,
-        "name": "Ensure that when I type via matter reference that only that Matter Reference lot is getting displayed",
-        "tags": [
-          {
-            "name": "@PlanIT",
-            "line": 1
-          },
-          {
-            "name": "@dashboard",
-            "line": 28
-          }
-        ],
-        "type": "scenario",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 31,
-            "name": "that the user is logged in and the dashboard page is displayed",
-            "match": {
-              "location": "step-definitions\\dashboardPageDefinition.js:11"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 15707000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 32,
-            "name": "I enter and Existing Project only via Matter Reference into the search bar",
-            "match": {
-              "location": "step-definitions\\dashboardPageDefinition.js:130"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 130000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 33,
-            "name": "I click Search via matter Reference",
-            "match": {
-              "location": "step-definitions\\dashboardPageDefinition.js:137"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 94000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 34,
-            "name": "the lots that comply with the search should get displayed",
-            "match": {
-              "location": "step-definitions\\dashboardPageDefinition.js:102"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 1060000000
-            }
-          },
-          {
-            "keyword": "After",
-            "hidden": true,
-            "match": {
-              "location": "PlanIT\\nightwatch-cucumber\\node_modules\\cucumber\\lib\\support_code_library_builder\\index.js:62"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 0
-            }
-          }
-        ]
-      },
-      {
-        "id": "planit-search-fearture;ensure-that-when-i-type-via-address-that-only-the-lot-with-that-address-is-getting-displayed",
-        "keyword": "Scenario",
-        "line": 39,
-        "name": "Ensure that when I type via Address that only the lot with that Address is getting displayed",
-        "tags": [
-          {
-            "name": "@PlanIT",
-            "line": 1
-          },
-          {
-            "name": "@dashboard",
-            "line": 38
-          }
-        ],
-        "type": "scenario",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 41,
-            "name": "that the user is logged in and the dashboard page is displayed",
-            "match": {
-              "location": "step-definitions\\dashboardPageDefinition.js:11"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 15933000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 42,
-            "name": "I enter and Existing Address into the search bar",
-            "match": {
-              "location": "step-definitions\\dashboardPageDefinition.js:156"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 151000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 43,
-            "name": "the Project With that Address should get displayed",
-            "match": {
-              "location": "step-definitions\\dashboardPageDefinition.js:165"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 38000000
-            }
-          },
-          {
-            "keyword": "After",
-            "hidden": true,
-            "match": {
-              "location": "PlanIT\\nightwatch-cucumber\\node_modules\\cucumber\\lib\\support_code_library_builder\\index.js:62"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 1000000
-            }
-          }
-        ]
-      },
-      {
-        "id": "planit-search-fearture;ensure-that-when-i-type-via-partymember-that-only-the-lot-with-that-partymember-is-getting-displayed",
-        "keyword": "Scenario",
-        "line": 47,
-        "name": "Ensure that when I type via PartyMember that only the lot with that PartyMember is getting displayed",
-        "tags": [
-          {
-            "name": "@PlanIT",
-            "line": 1
-          },
-          {
-            "name": "@dashboard",
-            "line": 46
-          }
-        ],
-        "type": "scenario",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 49,
-            "name": "that the user is logged in and the dashboard page is displayed",
-            "match": {
-              "location": "step-definitions\\dashboardPageDefinition.js:11"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 15792000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 50,
+            "line": 11,
             "name": "I enter and Existing Project into the search bar",
             "match": {
               "location": "step-definitions\\dashboardPageDefinition.js:25"
             },
             "result": {
               "status": "passed",
-              "duration": 125000000
+              "duration": 199000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 51,
+            "line": 12,
             "name": "the Project should get displayed",
             "match": {
               "location": "step-definitions\\dashboardPageDefinition.js:31"
             },
             "result": {
               "status": "passed",
-              "duration": 33000000
+              "duration": 580000000
             }
           },
           {
@@ -447,212 +84,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 0
-            }
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "keyword": "Feature",
-    "name": "PlanIT Login Feature",
-    "line": 2,
-    "id": "planit-login-feature",
-    "tags": [
-      {
-        "name": "@PlanIT",
-        "line": 1
-      }
-    ],
-    "uri": "features\\featureOne.feature",
-    "elements": [
-      {
-        "id": "planit-login-feature;ensure-that-the-user-is-able-to-login-with--invalid-credentials",
-        "keyword": "Scenario",
-        "line": 4,
-        "name": "Ensure that the user is able to login with  invalid credentials",
-        "tags": [
-          {
-            "name": "@PlanIT",
-            "line": 1
-          },
-          {
-            "name": "@login",
-            "line": 3
-          }
-        ],
-        "type": "scenario",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 5,
-            "name": "I open Open the PlanIT Login Screen",
-            "match": {
-              "location": "step-definitions\\simpleSite.js:6"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 306000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 6,
-            "name": "I enter an Incorrect Username",
-            "match": {
-              "location": "step-definitions\\simpleSite.js:41"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 5145000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 7,
-            "name": "I enter my Incorrect Password",
-            "match": {
-              "location": "step-definitions\\simpleSite.js:47"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 5168000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 8,
-            "name": "Click Subimit",
-            "match": {
-              "location": "step-definitions\\simpleSite.js:27"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 5194000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 9,
-            "name": "the user is should be displayed an error message",
-            "match": {
-              "location": "step-definitions\\simpleSite.js:55"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 28000000
-            }
-          },
-          {
-            "keyword": "After",
-            "hidden": true,
-            "match": {
-              "location": "PlanIT\\nightwatch-cucumber\\node_modules\\cucumber\\lib\\support_code_library_builder\\index.js:62"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 0
-            }
-          }
-        ]
-      },
-      {
-        "id": "planit-login-feature;ensure-that-the-user-is-able-to-login-with--valid-credentials",
-        "keyword": "Scenario",
-        "line": 12,
-        "name": "Ensure that the user is able to login with  valid credentials",
-        "tags": [
-          {
-            "name": "@PlanIT",
-            "line": 1
-          },
-          {
-            "name": "@login",
-            "line": 11
-          }
-        ],
-        "type": "scenario",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 14,
-            "name": "I open Open the PlanIT Login Screen",
-            "match": {
-              "location": "step-definitions\\simpleSite.js:6"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 301000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 15,
-            "name": "I enter my Username",
-            "match": {
-              "location": "step-definitions\\simpleSite.js:15"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 5215000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 16,
-            "name": "I enter my Password",
-            "match": {
-              "location": "step-definitions\\simpleSite.js:21"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 5130000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 17,
-            "name": "Click Subimit",
-            "match": {
-              "location": "step-definitions\\simpleSite.js:27"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 5160000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 18,
-            "name": "the user is should be displayed the dashboard screen",
-            "match": {
-              "location": "step-definitions\\simpleSite.js:33"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 29000000
-            }
-          },
-          {
-            "keyword": "After",
-            "hidden": true,
-            "match": {
-              "location": "PlanIT\\nightwatch-cucumber\\node_modules\\cucumber\\lib\\support_code_library_builder\\index.js:62"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 0
+              "duration": 1000000
             }
           }
         ]

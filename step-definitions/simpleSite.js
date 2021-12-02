@@ -7,7 +7,6 @@ Given('I open Open the PlanIT Login Screen', () =>{
     console.log("Foundation Step")
     return LoginPage
     .navigate()
-    .maximizeWindow()
 
 
 });
