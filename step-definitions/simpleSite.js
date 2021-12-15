@@ -1,8 +1,15 @@
+// Import Dependancies 
 const {client} = require('nightwatch-api');
 const {Given, When, Then} = require('cucumber');
+
+
+// Import page objects
 const DashboardPage = client.page.dashboardPage()
 var LoginPage = client.page.demoObjects();
 
+
+
+// Login Page Scenario
 Given('I open Open the PlanIT Login Screen', () =>{
     console.log("Foundation Step")
     return LoginPage

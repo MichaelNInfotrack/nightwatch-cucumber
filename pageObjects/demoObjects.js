@@ -1,18 +1,24 @@
 
 let commands = {
 
-
+// navigation to the webpage
   navigate: function (username, password) {
     this.navigate()
     this.maximizeWindow()
     
   },
+
+  // Setting the value for the username 
 loginUsername: function (username) {
     this.setValue('@locusernameInput',username)
   },
+  // Setting the value for the Password 
+
   loginPassword: function (password) {
     this.setValue('@locPasswordInput',password)
   },
+
+
 
   loginSubmit: function () {
     this.click('@locSubmitBtn')

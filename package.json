@@ -5,8 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "mkdirp report && cucumber-js --require cucumber.conf.js --require step-definitions --format node_modules/cucumber-pretty --format json:report/cucumber_report.json",
-    "test-Login Feature": "mkdirp report && cucumber-js --require cucumber.conf.js --require step-definitions --format node_modules/cucumber-pretty --format json:report/cucumber_report.json" 
- 
+    "test-Login Feature": "mkdirp report && cucumber-js --require cucumber.conf.js --require step-definitions --format node_modules/cucumber-pretty --format json:report/cucumber_report.json"
   },
   "author": "Michael Nashed",
   "license": "ISC",
