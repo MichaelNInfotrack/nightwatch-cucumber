@@ -2,8 +2,9 @@
 // sample commands to that will actually exeute the steps the need to run during the test.
 let commands = {
 
-    ExampleFunction :function() {
-        this.navigate.url()
+    navigate: function() {
+        this.navigate()
+        this.maximizeWindow()
     },
 
 
@@ -14,7 +15,7 @@ module.exports = {
     // selectors where you can 
 
     commands: [commands],
-    url: '',
+    url: 'https://wikipedia.org',
         elements: {
         startHere: {
           selector: "Sample Selector",

@@ -1,3 +1,4 @@
+const fs = require('fs');
 const path = require('path');
 const { setDefaultTimeout, After, AfterAll, BeforeAll } = require('cucumber');
 const { createSession, closeSession, startWebDriver, stopWebDriver } = require('nightwatch-api');
@@ -12,14 +13,16 @@ function getScreenshots() {
     const screenshots = fs.readdirSync(folder).map(file => path.resolve(folder, file));
     return screenshots;
   } catch (err) {
+    console.log("Error happend when taking screenshot")
     return [];
+ 
   }
 }
 
 setDefaultTimeout(60000);
 
 BeforeAll(async () => {
-  await startWebDriver({ env: process.env.NIGHTWATCH_ENV || 'chromeHeadless' });
+  await startWebDriver();
   await createSession();
 });
 

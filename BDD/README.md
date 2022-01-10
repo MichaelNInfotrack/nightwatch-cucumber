@@ -14,8 +14,7 @@ This is the repository of the BDD (Behaviour Driven Development) UI testing scen
 Open a Terminal session, select the 'src' folder (`> cd src`) and run `npm install`. This action will install the required Nighwatch modules to execute the test scenarios
 
 # Run BDD Nighwatch test - Visual Mode
-Open a Terminal session, select the 'src' folder (`> cd src`) and run `npm run Nighwatch:open`. This action will open a CY window for you to visualise the testing execution. Click on "example.feature" to visualise the execution.
-
+Open a Terminal session, select the 'src' folder (`> cd src`) and run `npm run tag'
 # Run BDD Nighwatch test in Headless Mode with Reporter
 * Open a Terminal session, select the 'src' folder (`> cd src`) 
 * Define you commands in the package.json that are linked to config file.
@@ -26,7 +25,8 @@ Open a Terminal session, select the 'src' folder (`> cd src`) and run `npm run N
 # Run BDD Nighwatch test with Tags
 * Open a Terminal session, select the 'src' folder (`> cd src`) 
 * Define you commands in the package.json that are linked to config file.
-* ensure under desired capablitiles that the for which ever driver you choose to use you have passed the --headless option in to ensure that the test doesnt open the browser
+* Also add the tag at the top of the scenario in the feature file. 
+* Once done. you will need to type npm run 'name of tag' @(ScenarioTag that you speficed in your tests)
 
 
 

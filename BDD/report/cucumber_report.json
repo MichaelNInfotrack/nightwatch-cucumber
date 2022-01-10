@@ -1,0 +1,526 @@
+[
+  {
+    "description": "As a user, I want to navigate to the main page of Wikipedia, so that I can perform searches in multiple languages.",
+    "keyword": "Feature",
+    "name": "Feature: Searching information in multiple languages (https://wikipedia.org)",
+    "line": 1,
+    "id": "feature:-searching-information-in-multiple-languages-(https://wikipedia.org)",
+    "tags": [],
+    "uri": "features\\WikiTest.feature",
+    "elements": [
+      {
+        "id": "feature:-searching-information-in-multiple-languages-(https://wikipedia.org);",
+        "keyword": "Scenario",
+        "line": 12,
+        "name": "",
+        "tags": [
+          {
+            "name": "@ScenarioOne",
+            "line": 3
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "that the user is on the  Wikipedia Homepage",
+            "match": {
+              "location": "step-definitions\\ExampleDefinition.js:24"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 1000000,
+              "error_message": "Error: Trying to overwrite page object/section \"WikiHomepage\"  method/property \"navigate\".\n    at C:\\Users\\Michael.Nashed\\Desktop\\BDD Skeleton\\nightwatch-cucumber\\BDD\\node_modules\\nightwatch\\lib\\page-object\\base-object.js:96:25\n    at Array.forEach (<anonymous>)\n    at C:\\Users\\Michael.Nashed\\Desktop\\BDD Skeleton\\nightwatch-cucumber\\BDD\\node_modules\\nightwatch\\lib\\page-object\\base-object.js:92:22\n    at Array.forEach (<anonymous>)\n    at Function.addCommands (C:\\Users\\Michael.Nashed\\Desktop\\BDD Skeleton\\nightwatch-cucumber\\BDD\\node_modules\\nightwatch\\lib\\page-object\\base-object.js:91:14)\n    at new Page (C:\\Users\\Michael.Nashed\\Desktop\\BDD Skeleton\\nightwatch-cucumber\\BDD\\node_modules\\nightwatch\\lib\\page-object\\index.js:24:10)\n    at PageObjectLoader.pageObjectDefinition (C:\\Users\\Michael.Nashed\\Desktop\\BDD Skeleton\\nightwatch-cucumber\\BDD\\node_modules\\nightwatch\\lib\\api\\_loaders\\page-object.js:35:12)\n    at page.<computed> (C:\\Users\\Michael.Nashed\\Desktop\\BDD Skeleton\\nightwatch-cucumber\\BDD\\node_modules\\nightwatch-api\\lib\\promisify.js:58:42)\n    at Object.get (C:\\Users\\Michael.Nashed\\Desktop\\BDD Skeleton\\nightwatch-cucumber\\BDD\\node_modules\\nightwatch-api\\lib\\proxy.js:40:16)\n    at World.<anonymous> (C:\\Users\\Michael.Nashed\\Desktop\\BDD Skeleton\\nightwatch-cucumber\\BDD\\step-definitions\\ExampleDefinition.js:25:25)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "the user types in Item they want to search",
+            "match": {
+              "location": "step-definitions\\ExampleDefinition.js:30"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "the user clicks on \"English\" Option dropdown",
+            "match": {
+              "location": "step-definitions\\ExampleDefinition.js:39"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "the user clicks the search Icon",
+            "match": {
+              "location": "step-definitions\\ExampleDefinition.js:46"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 9,
+            "name": "the user should be shown the results in that language.",
+            "match": {
+              "location": "step-definitions\\ExampleDefinition.js:53"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "Skeleton\\nightwatch-cucumber\\BDD\\node_modules\\cucumber\\lib\\support_code_library_builder\\index.js:62"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "feature:-searching-information-in-multiple-languages-(https://wikipedia.org);",
+        "keyword": "Scenario",
+        "line": 13,
+        "name": "",
+        "tags": [
+          {
+            "name": "@ScenarioOne",
+            "line": 3
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "that the user is on the  Wikipedia Homepage",
+            "match": {
+              "location": "step-definitions\\ExampleDefinition.js:24"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 0,
+              "error_message": "Error: Trying to overwrite page object/section \"WikiHomepage\"  method/property \"navigate\".\n    at C:\\Users\\Michael.Nashed\\Desktop\\BDD Skeleton\\nightwatch-cucumber\\BDD\\node_modules\\nightwatch\\lib\\page-object\\base-object.js:96:25\n    at Array.forEach (<anonymous>)\n    at C:\\Users\\Michael.Nashed\\Desktop\\BDD Skeleton\\nightwatch-cucumber\\BDD\\node_modules\\nightwatch\\lib\\page-object\\base-object.js:92:22\n    at Array.forEach (<anonymous>)\n    at Function.addCommands (C:\\Users\\Michael.Nashed\\Desktop\\BDD Skeleton\\nightwatch-cucumber\\BDD\\node_modules\\nightwatch\\lib\\page-object\\base-object.js:91:14)\n    at new Page (C:\\Users\\Michael.Nashed\\Desktop\\BDD Skeleton\\nightwatch-cucumber\\BDD\\node_modules\\nightwatch\\lib\\page-object\\index.js:24:10)\n    at PageObjectLoader.pageObjectDefinition (C:\\Users\\Michael.Nashed\\Desktop\\BDD Skeleton\\nightwatch-cucumber\\BDD\\node_modules\\nightwatch\\lib\\api\\_loaders\\page-object.js:35:12)\n    at page.<computed> (C:\\Users\\Michael.Nashed\\Desktop\\BDD Skeleton\\nightwatch-cucumber\\BDD\\node_modules\\nightwatch-api\\lib\\promisify.js:58:42)\n    at Object.get (C:\\Users\\Michael.Nashed\\Desktop\\BDD Skeleton\\nightwatch-cucumber\\BDD\\node_modules\\nightwatch-api\\lib\\proxy.js:40:16)\n    at World.<anonymous> (C:\\Users\\Michael.Nashed\\Desktop\\BDD Skeleton\\nightwatch-cucumber\\BDD\\step-definitions\\ExampleDefinition.js:25:25)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "the user types in Item they want to search",
+            "match": {
+              "location": "step-definitions\\ExampleDefinition.js:30"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "the user clicks on \"Spanish\" Option dropdown",
+            "match": {
+              "location": "step-definitions\\ExampleDefinition.js:39"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "the user clicks the search Icon",
+            "match": {
+              "location": "step-definitions\\ExampleDefinition.js:46"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 9,
+            "name": "the user should be shown the results in that language.",
+            "match": {
+              "location": "step-definitions\\ExampleDefinition.js:53"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "Skeleton\\nightwatch-cucumber\\BDD\\node_modules\\cucumber\\lib\\support_code_library_builder\\index.js:62"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 0
+            }
+          }
+        ]
+      },
+      {
+        "id": "feature:-searching-information-in-multiple-languages-(https://wikipedia.org);",
+        "keyword": "Scenario",
+        "line": 14,
+        "name": "",
+        "tags": [
+          {
+            "name": "@ScenarioOne",
+            "line": 3
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "that the user is on the  Wikipedia Homepage",
+            "match": {
+              "location": "step-definitions\\ExampleDefinition.js:24"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 1000000,
+              "error_message": "Error: Trying to overwrite page object/section \"WikiHomepage\"  method/property \"navigate\".\n    at C:\\Users\\Michael.Nashed\\Desktop\\BDD Skeleton\\nightwatch-cucumber\\BDD\\node_modules\\nightwatch\\lib\\page-object\\base-object.js:96:25\n    at Array.forEach (<anonymous>)\n    at C:\\Users\\Michael.Nashed\\Desktop\\BDD Skeleton\\nightwatch-cucumber\\BDD\\node_modules\\nightwatch\\lib\\page-object\\base-object.js:92:22\n    at Array.forEach (<anonymous>)\n    at Function.addCommands (C:\\Users\\Michael.Nashed\\Desktop\\BDD Skeleton\\nightwatch-cucumber\\BDD\\node_modules\\nightwatch\\lib\\page-object\\base-object.js:91:14)\n    at new Page (C:\\Users\\Michael.Nashed\\Desktop\\BDD Skeleton\\nightwatch-cucumber\\BDD\\node_modules\\nightwatch\\lib\\page-object\\index.js:24:10)\n    at PageObjectLoader.pageObjectDefinition (C:\\Users\\Michael.Nashed\\Desktop\\BDD Skeleton\\nightwatch-cucumber\\BDD\\node_modules\\nightwatch\\lib\\api\\_loaders\\page-object.js:35:12)\n    at page.<computed> (C:\\Users\\Michael.Nashed\\Desktop\\BDD Skeleton\\nightwatch-cucumber\\BDD\\node_modules\\nightwatch-api\\lib\\promisify.js:58:42)\n    at Object.get (C:\\Users\\Michael.Nashed\\Desktop\\BDD Skeleton\\nightwatch-cucumber\\BDD\\node_modules\\nightwatch-api\\lib\\proxy.js:40:16)\n    at World.<anonymous> (C:\\Users\\Michael.Nashed\\Desktop\\BDD Skeleton\\nightwatch-cucumber\\BDD\\step-definitions\\ExampleDefinition.js:25:25)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "the user types in Item they want to search",
+            "match": {
+              "location": "step-definitions\\ExampleDefinition.js:30"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "the user clicks on \"French\" Option dropdown",
+            "match": {
+              "location": "step-definitions\\ExampleDefinition.js:39"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "the user clicks the search Icon",
+            "match": {
+              "location": "step-definitions\\ExampleDefinition.js:46"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 9,
+            "name": "the user should be shown the results in that language.",
+            "match": {
+              "location": "step-definitions\\ExampleDefinition.js:53"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "Skeleton\\nightwatch-cucumber\\BDD\\node_modules\\cucumber\\lib\\support_code_library_builder\\index.js:62"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "feature:-searching-information-in-multiple-languages-(https://wikipedia.org);as-a-user,-i-want-to-navigate-to-the-wikipedia-page-in-english,-so-that-i-can-perform-searches-in-english.",
+        "keyword": "Scenario",
+        "line": 26,
+        "name": "As a user, I want to navigate to the Wikipedia page in English, so that I can perform searches in English.",
+        "tags": [
+          {
+            "name": "@ScenarioTwo",
+            "line": 17
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 19,
+            "name": "that the user is on the  Wikipedia Homepage",
+            "result": {
+              "status": "undefined"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 20,
+            "name": "the user selects on the English language option for the drop",
+            "match": {
+              "location": "step-definitions\\ExampleDefinition.js:63"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 21,
+            "name": "the user types the \"Cars\" into the search field",
+            "match": {
+              "location": "step-definitions\\ExampleDefinition.js:74"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 22,
+            "name": "the user clicks the search Icon",
+            "match": {
+              "location": "step-definitions\\ExampleDefinition.js:46"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 23,
+            "name": "the user should be shown the result in english",
+            "match": {
+              "location": "step-definitions\\ExampleDefinition.js:83"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "Skeleton\\nightwatch-cucumber\\BDD\\node_modules\\cucumber\\lib\\support_code_library_builder\\index.js:62"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "feature:-searching-information-in-multiple-languages-(https://wikipedia.org);as-a-user,-i-want-to-navigate-to-the-wikipedia-page-in-english,-so-that-i-can-perform-searches-in-english.",
+        "keyword": "Scenario",
+        "line": 27,
+        "name": "As a user, I want to navigate to the Wikipedia page in English, so that I can perform searches in English.",
+        "tags": [
+          {
+            "name": "@ScenarioTwo",
+            "line": 17
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 19,
+            "name": "that the user is on the  Wikipedia Homepage",
+            "result": {
+              "status": "undefined"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 20,
+            "name": "the user selects on the English language option for the drop",
+            "match": {
+              "location": "step-definitions\\ExampleDefinition.js:63"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 21,
+            "name": "the user types the \"The Pyramid of Giza\" into the search field",
+            "match": {
+              "location": "step-definitions\\ExampleDefinition.js:74"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 22,
+            "name": "the user clicks the search Icon",
+            "match": {
+              "location": "step-definitions\\ExampleDefinition.js:46"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 23,
+            "name": "the user should be shown the result in english",
+            "match": {
+              "location": "step-definitions\\ExampleDefinition.js:83"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "Skeleton\\nightwatch-cucumber\\BDD\\node_modules\\cucumber\\lib\\support_code_library_builder\\index.js:62"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 0
+            }
+          }
+        ]
+      },
+      {
+        "id": "feature:-searching-information-in-multiple-languages-(https://wikipedia.org);as-a-user,-i-want-to-navigate-to-the-wikipedia-page-in-english,-so-that-i-can-perform-searches-in-english.",
+        "keyword": "Scenario",
+        "line": 28,
+        "name": "As a user, I want to navigate to the Wikipedia page in English, so that I can perform searches in English.",
+        "tags": [
+          {
+            "name": "@ScenarioTwo",
+            "line": 17
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 19,
+            "name": "that the user is on the  Wikipedia Homepage",
+            "result": {
+              "status": "undefined"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 20,
+            "name": "the user selects on the English language option for the drop",
+            "match": {
+              "location": "step-definitions\\ExampleDefinition.js:63"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 21,
+            "name": "the user types the \"Rockets\" into the search field",
+            "match": {
+              "location": "step-definitions\\ExampleDefinition.js:74"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 22,
+            "name": "the user clicks the search Icon",
+            "match": {
+              "location": "step-definitions\\ExampleDefinition.js:46"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 23,
+            "name": "the user should be shown the result in english",
+            "match": {
+              "location": "step-definitions\\ExampleDefinition.js:83"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "Skeleton\\nightwatch-cucumber\\BDD\\node_modules\\cucumber\\lib\\support_code_library_builder\\index.js:62"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
