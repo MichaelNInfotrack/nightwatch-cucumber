@@ -1,8 +1,10 @@
 
 let commands = {
 
-// navigation to the webpage
-  navigate: function (username, password) {
+
+
+  navigate: function () {
+
     this.navigate()
     this.maximizeWindow()
     

@@ -5,7 +5,7 @@ const {Given, When, Then} = require('cucumber');
 
 // Import page objects
 const DashboardPage = client.page.dashboardPage()
-var LoginPage = client.page.demoObjects();
+const LoginPage = client.page.demoObjects();
 
 
 
