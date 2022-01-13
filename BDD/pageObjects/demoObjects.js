@@ -1,20 +1,60 @@
 
+let commands = {
+
+// navigation to the webpage
+  navigate: function (username, password) {
+    this.navigate()
+    this.maximizeWindow()
+    
+  },
+
+  // Setting the value for the username 
+loginUsername: function (username) {
+    this.setValue('@locusernameInput',username)
+  },
+  // Setting the value for the Password 
+
+  loginPassword: function (password) {
+    this.setValue('@locPasswordInput',password)
+  },
+
+
+
+  loginSubmit: function () {
+    this.click('@locSubmitBtn')
+    this.waitForElementPresent("@locPlanITSearch", 1000, false, "Dashboard Search bar is visible")
+  },
+};
+
+
+
+
+
+
 module.exports = {
 
 
-  url: 'https://www.wikipedia.org/',
+  url: 'https://planit.infotrack.com.au',
   elements: {
-    WikiSearchInput:{
-      selector:"//input[contains(@id,'searchInput')]",
+    locusernameInput:{
+      selector:"/html/body/div/div[2]/div/div/div[2]/form/div[1]/div[2]/span/input",
       locateStrategy:"xpath"  
     },
-    WikiSearchButton:{
-      selector:"//i[@class='sprite svg-search-icon']",
-      locateStrategy:"xpath"  
+    locPasswordInput:{
+    selector:"/html/body/div/div[2]/div/div/div[2]/form/div[2]/div[2]/span/input",
+    locateStrategy:"xpath"  
     },
-    WikiTitleValidation:{
-      selector:"//h1[contains(.,'Car')]",
-      locateStrategy:"xpath"  
+    locSubmitBtn:{
+    selector:"/html/body/div/div[2]/div/div/div[2]/form/div[3]/button",
+    locateStrategy:"xpath"  
+    },
+    locErrorMsg:{
+    selector:"/html/body/div[1]/div[2]/div/div/div[1]/div",
+    locateStrategy:"xpath"  
+    },
+    locPlanITSearch: {
+    selector: "/html/body/div/div[2]/div[1]/div/div/div[1]/div/div[1]/div[2]/span/span/input",
+    locateStrategy: 'xpath'
     },
   }
 }

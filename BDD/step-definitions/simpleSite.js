@@ -4,36 +4,63 @@ const {Given, When, Then} = require('cucumber');
 
 
 // Import page objects
+const DashboardPage = client.page.dashboardPage()
+var LoginPage = client.page.demoObjects();
 
-var WikipediaPage = client.page.demoObjects();
 
 
-
-// Wikiepda search Items 
-Given('that user is navigates to the WIkipedia home page', () =>{
+// Login Page Scenario
+Given('I open Open the PlanIT Login Screen', () =>{
     console.log("Foundation Step")
-    return WikipediaPage
+    return LoginPage
     .navigate()
-    .maximizeWindow()
+
 
 });
-//When 
 
-When("the user types in the word cars and clicks the search button", ()=>{
-
-    return WikipediaPage
-        .setValue('@WikiSearchInput','Cars') 
-        .click('@WikiSearchButton')
+When("I enter my Username", ()=>{
+    console.log("Action Step")
+    return LoginPage
+    .setValue('@locusernameInput',"planit.integration.tests")
 });
 
-Then("the user should be displayed with the cars Wikipedia page", ()=>{
+When("I enter my Password", ()=>{
+    console.log("Action Step")
+    return LoginPage
+    .setValue('@locPasswordInput',"planit.integration.tests")
+});
+
+When("Click Subimit", ()=>{
+    console.log("Action Step")
+    return LoginPage
+    .click('@locSubmitBtn')
+});
+
+Then("the user is should be displayed the dashboard screen", ()=>{
     console.log("Validation step")
-    return WikipediaPage
-    .isVisible('@WikiTitleValidation', "Cars Page is showing") 
-    .saveScreenshot('ValidationScreenshots/CompletedScreenshot.png')
-
-  
-
+    return DashboardPage
+    .waitForElementPresent("@locProjectDashboardTitle", 1000, false, "Dashboard Search bar is visible")
     
+});
 
-})
+
+When("I enter an Incorrect Username", ()=>{
+    console.log("Action Step")
+    return LoginPage
+    .setValue('@locusernameInput',"testing1")
+});
+
+When("I enter my Incorrect Password", ()=>{
+    console.log("Action Step")
+    return LoginPage
+    .setValue('@locPasswordInput',"Testing2")
+});
+
+
+
+Then("the user is should be displayed an error message", ()=>{
+    console.log("Validation step")
+    return LoginPage 
+    .waitForElementPresent("@locErrorMsg", 1000, false, "Error message is getting displayed as expected")
+ 
+});

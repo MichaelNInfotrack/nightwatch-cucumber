@@ -14,14 +14,13 @@ module.exports = {
       },
       desiredCapabilities: {
         browserName: 'chrome',
-        workers:3,
-        javascriptEnabled: true,
-        acceptSslCerts: true,
+        workers:3
       },
-            screenshots: {
-                enabled: false,
-                path: 'OnfailScreenshots'
-            }
+      screenshots: {
+        enabled: true,
+        on_failure: true,
+        path: 'Screenshots'
+      }
     }
   }
 };

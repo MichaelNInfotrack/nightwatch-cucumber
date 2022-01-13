@@ -1,4 +1,4 @@
-# Base Nightwatch Cucumber Project 
+# AzureDevOpsNightwatchPOC
 
 
 ## Specs
@@ -7,7 +7,7 @@
 
 ## About the BDD scenario's
 - All the scenarios can be found in the feature folder 
-- Have added a few sample scenarios for wikipedia.
+- These scenarios are just going through the planit login workflow.
 
 
 ## Before running the test 

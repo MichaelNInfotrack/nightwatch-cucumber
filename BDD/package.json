@@ -1,12 +1,11 @@
 {
-  "name": "Nightwatch Base Project",
+  "name": "nightwatchdemo",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "mkdirp report && cucumber-js --require cucumber.conf.js --require step-definitions --format node_modules/cucumber-pretty --format json:report/cucumber_report.json",
-    "test-Login Feature": "mkdirp report && cucumber-js --require cucumber.conf.js --require step-definitions --format node_modules/cucumber-pretty --format json:report/cucumber_report.json",
-    "e2e-report": "node create-html-report.js"
+    "test-Login Feature": "mkdirp report && cucumber-js --require cucumber.conf.js --require step-definitions --format node_modules/cucumber-pretty --format json:report/cucumber_report.json"
   },
   "author": "Michael Nashed",
   "license": "ISC",
@@ -19,8 +18,5 @@
     "nightwatch": "^1.3.7",
     "nightwatch-api": "^3.0.1",
     "nightwatch-cucumber": "^9.1.3"
-  },
-  "dependencies": {
-    "geckodriver": "^3.0.1"
   }
 }
